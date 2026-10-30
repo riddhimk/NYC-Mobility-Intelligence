@@ -20,7 +20,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-client = AsyncIOMotorClient("mongodb://localhost:27017/", serverSelectionTimeoutMS=1000)
+MONGO_URI = os.getenv("MONGO_URI", os.getenv("MONGODB_URI", "mongodb://localhost:27017/"))
+client = AsyncIOMotorClient(MONGO_URI, serverSelectionTimeoutMS=2500)
 db = client["nyc_mobility"]
 
 active_websockets = set()
