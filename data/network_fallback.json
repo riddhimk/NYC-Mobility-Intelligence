@@ -1,0 +1,493 @@
+{
+  "nodes": [
+    {
+      "id": "Times Sq",
+      "group": 1,
+      "lat": 40.758,
+      "lng": -73.9855,
+      "pickups": "48,210",
+      "dropoffs": "52,109",
+      "peak_hour": "19:00 - 22:00",
+      "top_dest": "Penn Station",
+      "avg_fare": "$18.50",
+      "centrality": 4.9
+    },
+    {
+      "id": "Midtown Center",
+      "group": 1,
+      "lat": 40.7549,
+      "lng": -73.984,
+      "pickups": "55,302",
+      "dropoffs": "51,109",
+      "peak_hour": "08:00 - 10:00",
+      "top_dest": "Upper East Side",
+      "avg_fare": "$16.25",
+      "centrality": 4.8
+    },
+    {
+      "id": "Penn Station",
+      "group": 1,
+      "lat": 40.7506,
+      "lng": -73.9935,
+      "pickups": "68,912",
+      "dropoffs": "62,330",
+      "peak_hour": "16:00 - 19:00",
+      "top_dest": "Midtown Center",
+      "avg_fare": "$17.80",
+      "centrality": 4.9
+    },
+    {
+      "id": "Chelsea",
+      "group": 1,
+      "lat": 40.7465,
+      "lng": -74.0014,
+      "pickups": "28,451",
+      "dropoffs": "26,104",
+      "peak_hour": "21:00 - 02:00",
+      "top_dest": "Financial District",
+      "avg_fare": "$15.10",
+      "centrality": 3.9
+    },
+    {
+      "id": "Upper East Side",
+      "group": 1,
+      "lat": 40.7736,
+      "lng": -73.9566,
+      "pickups": "42,201",
+      "dropoffs": "44,505",
+      "peak_hour": "07:00 - 09:00",
+      "top_dest": "Midtown Center",
+      "avg_fare": "$19.90",
+      "centrality": 4.3
+    },
+    {
+      "id": "Upper West Side",
+      "group": 1,
+      "lat": 40.787,
+      "lng": -73.9754,
+      "pickups": "37,890",
+      "dropoffs": "39,120",
+      "peak_hour": "08:00 - 10:00",
+      "top_dest": "Times Sq",
+      "avg_fare": "$18.20",
+      "centrality": 4.1
+    },
+    {
+      "id": "Financial District",
+      "group": 1,
+      "lat": 40.7075,
+      "lng": -74.0113,
+      "pickups": "34,109",
+      "dropoffs": "36,902",
+      "peak_hour": "17:00 - 19:00",
+      "top_dest": "Downtown Brooklyn",
+      "avg_fare": "$21.50",
+      "centrality": 4.2
+    },
+    {
+      "id": "East Village",
+      "group": 1,
+      "lat": 40.7265,
+      "lng": -73.9815,
+      "pickups": "29,410",
+      "dropoffs": "31,200",
+      "peak_hour": "22:00 - 03:00",
+      "top_dest": "Williamsburg",
+      "avg_fare": "$14.80",
+      "centrality": 3.8
+    },
+    {
+      "id": "Harlem",
+      "group": 1,
+      "lat": 40.8116,
+      "lng": -73.9465,
+      "pickups": "21,340",
+      "dropoffs": "24,190",
+      "peak_hour": "08:00 - 11:00",
+      "top_dest": "Midtown Center",
+      "avg_fare": "$22.40",
+      "centrality": 3.5
+    },
+    {
+      "id": "Washington Heights",
+      "group": 1,
+      "lat": 40.8417,
+      "lng": -73.9393,
+      "pickups": "16,780",
+      "dropoffs": "18,400",
+      "peak_hour": "17:00 - 20:00",
+      "top_dest": "Harlem",
+      "avg_fare": "$24.50",
+      "centrality": 3.2
+    },
+    {
+      "id": "Grand Central",
+      "group": 2,
+      "lat": 40.7527,
+      "lng": -73.9772,
+      "pickups": "58,400",
+      "dropoffs": "56,200",
+      "peak_hour": "08:00 - 10:00",
+      "top_dest": "Financial District",
+      "avg_fare": "$17.20",
+      "centrality": 4.7
+    },
+    {
+      "id": "JFK Airport",
+      "group": 2,
+      "lat": 40.6413,
+      "lng": -73.7781,
+      "pickups": "96,405",
+      "dropoffs": "72,302",
+      "peak_hour": "15:00 - 22:00",
+      "top_dest": "Midtown Center",
+      "avg_fare": "$70.00",
+      "centrality": 4.8
+    },
+    {
+      "id": "LaGuardia Airport",
+      "group": 2,
+      "lat": 40.7769,
+      "lng": -73.874,
+      "pickups": "88,102",
+      "dropoffs": "49,201",
+      "peak_hour": "14:00 - 21:00",
+      "top_dest": "Midtown Center",
+      "avg_fare": "$42.50",
+      "centrality": 4.7
+    },
+    {
+      "id": "Newark Airport (EWR)",
+      "group": 2,
+      "lat": 40.6895,
+      "lng": -74.1745,
+      "pickups": "24,190",
+      "dropoffs": "19,800",
+      "peak_hour": "16:00 - 21:00",
+      "top_dest": "Penn Station",
+      "avg_fare": "$85.00",
+      "centrality": 3.6
+    },
+    {
+      "id": "Downtown Brooklyn",
+      "group": 3,
+      "lat": 40.6924,
+      "lng": -73.9875,
+      "pickups": "28,405",
+      "dropoffs": "29,103",
+      "peak_hour": "18:00 - 20:00",
+      "top_dest": "Financial District",
+      "avg_fare": "$16.75",
+      "centrality": 4.0
+    },
+    {
+      "id": "DUMBO",
+      "group": 3,
+      "lat": 40.7033,
+      "lng": -73.989,
+      "pickups": "19,200",
+      "dropoffs": "21,450",
+      "peak_hour": "18:00 - 21:00",
+      "top_dest": "Midtown Center",
+      "avg_fare": "$23.10",
+      "centrality": 3.7
+    },
+    {
+      "id": "Williamsburg",
+      "group": 3,
+      "lat": 40.7081,
+      "lng": -73.9571,
+      "pickups": "32,504",
+      "dropoffs": "28,105",
+      "peak_hour": "22:00 - 04:00",
+      "top_dest": "East Village",
+      "avg_fare": "$18.50",
+      "centrality": 3.9
+    },
+    {
+      "id": "Park Slope",
+      "group": 3,
+      "lat": 40.671,
+      "lng": -73.977,
+      "pickups": "17,800",
+      "dropoffs": "19,200",
+      "peak_hour": "07:30 - 09:30",
+      "top_dest": "Financial District",
+      "avg_fare": "$19.80",
+      "centrality": 3.4
+    },
+    {
+      "id": "Coney Island",
+      "group": 3,
+      "lat": 40.5755,
+      "lng": -73.9707,
+      "pickups": "9,450",
+      "dropoffs": "11,200",
+      "peak_hour": "13:00 - 18:00",
+      "top_dest": "Downtown Brooklyn",
+      "avg_fare": "$34.40",
+      "centrality": 2.8
+    },
+    {
+      "id": "Long Island City",
+      "group": 3,
+      "lat": 40.7447,
+      "lng": -73.9485,
+      "pickups": "27,100",
+      "dropoffs": "29,400",
+      "peak_hour": "08:00 - 10:00",
+      "top_dest": "Grand Central",
+      "avg_fare": "$17.20",
+      "centrality": 3.9
+    },
+    {
+      "id": "Astoria",
+      "group": 3,
+      "lat": 40.7644,
+      "lng": -73.9235,
+      "pickups": "23,400",
+      "dropoffs": "24,800",
+      "peak_hour": "18:00 - 21:00",
+      "top_dest": "Midtown Center",
+      "avg_fare": "$22.60",
+      "centrality": 3.6
+    },
+    {
+      "id": "Flushing",
+      "group": 3,
+      "lat": 40.7675,
+      "lng": -73.8331,
+      "pickups": "18,900",
+      "dropoffs": "20,100",
+      "peak_hour": "12:00 - 15:00",
+      "top_dest": "LaGuardia Airport",
+      "avg_fare": "$21.80",
+      "centrality": 3.3
+    },
+    {
+      "id": "Yankee Stadium / South Bronx",
+      "group": 3,
+      "lat": 40.8296,
+      "lng": -73.9262,
+      "pickups": "19,800",
+      "dropoffs": "22,400",
+      "peak_hour": "18:00 - 22:00",
+      "top_dest": "Harlem",
+      "avg_fare": "$25.90",
+      "centrality": 3.4
+    },
+    {
+      "id": "Fordham",
+      "group": 3,
+      "lat": 40.8617,
+      "lng": -73.8906,
+      "pickups": "14,200",
+      "dropoffs": "16,100",
+      "peak_hour": "16:00 - 19:00",
+      "top_dest": "Yankee Stadium / South Bronx",
+      "avg_fare": "$28.00",
+      "centrality": 3.0
+    },
+    {
+      "id": "St. George Ferry",
+      "group": 3,
+      "lat": 40.6432,
+      "lng": -74.0736,
+      "pickups": "11,400",
+      "dropoffs": "12,900",
+      "peak_hour": "07:00 - 09:30",
+      "top_dest": "Financial District",
+      "avg_fare": "$32.50",
+      "centrality": 2.9
+    },
+    {
+      "id": "Staten Island Mall",
+      "group": 3,
+      "lat": 40.5835,
+      "lng": -74.161,
+      "pickups": "7,800",
+      "dropoffs": "9,200",
+      "peak_hour": "14:00 - 18:00",
+      "top_dest": "St. George Ferry",
+      "avg_fare": "$29.10",
+      "centrality": 2.5
+    }
+  ],
+  "links": [
+    {
+      "source": "JFK Airport",
+      "target": "Midtown Center",
+      "value": 95
+    },
+    {
+      "source": "JFK Airport",
+      "target": "Times Sq",
+      "value": 90
+    },
+    {
+      "source": "JFK Airport",
+      "target": "Penn Station",
+      "value": 80
+    },
+    {
+      "source": "JFK Airport",
+      "target": "Downtown Brooklyn",
+      "value": 65
+    },
+    {
+      "source": "LaGuardia Airport",
+      "target": "Midtown Center",
+      "value": 88
+    },
+    {
+      "source": "LaGuardia Airport",
+      "target": "Upper East Side",
+      "value": 75
+    },
+    {
+      "source": "LaGuardia Airport",
+      "target": "Astoria",
+      "value": 60
+    },
+    {
+      "source": "LaGuardia Airport",
+      "target": "Grand Central",
+      "value": 70
+    },
+    {
+      "source": "Newark Airport (EWR)",
+      "target": "Penn Station",
+      "value": 55
+    },
+    {
+      "source": "Newark Airport (EWR)",
+      "target": "Financial District",
+      "value": 45
+    },
+    {
+      "source": "Times Sq",
+      "target": "Penn Station",
+      "value": 85
+    },
+    {
+      "source": "Times Sq",
+      "target": "Chelsea",
+      "value": 65
+    },
+    {
+      "source": "Midtown Center",
+      "target": "Grand Central",
+      "value": 80
+    },
+    {
+      "source": "Midtown Center",
+      "target": "Upper East Side",
+      "value": 75
+    },
+    {
+      "source": "Upper East Side",
+      "target": "Upper West Side",
+      "value": 60
+    },
+    {
+      "source": "Penn Station",
+      "target": "Financial District",
+      "value": 70
+    },
+    {
+      "source": "Chelsea",
+      "target": "East Village",
+      "value": 55
+    },
+    {
+      "source": "East Village",
+      "target": "Financial District",
+      "value": 50
+    },
+    {
+      "source": "Upper West Side",
+      "target": "Harlem",
+      "value": 48
+    },
+    {
+      "source": "Harlem",
+      "target": "Washington Heights",
+      "value": 42
+    },
+    {
+      "source": "Financial District",
+      "target": "DUMBO",
+      "value": 65
+    },
+    {
+      "source": "Financial District",
+      "target": "Downtown Brooklyn",
+      "value": 60
+    },
+    {
+      "source": "East Village",
+      "target": "Williamsburg",
+      "value": 68
+    },
+    {
+      "source": "Downtown Brooklyn",
+      "target": "Park Slope",
+      "value": 52
+    },
+    {
+      "source": "Park Slope",
+      "target": "Coney Island",
+      "value": 35
+    },
+    {
+      "source": "Midtown Center",
+      "target": "Long Island City",
+      "value": 65
+    },
+    {
+      "source": "Grand Central",
+      "target": "Long Island City",
+      "value": 58
+    },
+    {
+      "source": "Astoria",
+      "target": "Upper East Side",
+      "value": 52
+    },
+    {
+      "source": "Flushing",
+      "target": "LaGuardia Airport",
+      "value": 45
+    },
+    {
+      "source": "Harlem",
+      "target": "Yankee Stadium / South Bronx",
+      "value": 55
+    },
+    {
+      "source": "Washington Heights",
+      "target": "Yankee Stadium / South Bronx",
+      "value": 45
+    },
+    {
+      "source": "Yankee Stadium / South Bronx",
+      "target": "Fordham",
+      "value": 40
+    },
+    {
+      "source": "Financial District",
+      "target": "St. George Ferry",
+      "value": 38
+    },
+    {
+      "source": "St. George Ferry",
+      "target": "Staten Island Mall",
+      "value": 32
+    },
+    {
+      "source": "Park Slope",
+      "target": "St. George Ferry",
+      "value": 28
+    }
+  ]
+}

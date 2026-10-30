@@ -1,0 +1,115 @@
+@import "tailwindcss";
+
+@theme {
+  --color-nyc-yellow: #FFC107;
+  --color-nyc-yellow-hover: #FFB300;
+  --color-bg-dark: #0f1115;
+  --color-bg-panel: #1a1d24;
+  --color-border: #2a2d36;
+  --color-text-primary: #f8f9fa;
+  --color-text-secondary: #9ca3af;
+  --color-accent-cyan: #06b6d4;
+  
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  background-color: var(--color-bg-dark);
+  color: var(--color-text-primary);
+  font-family: var(--font-sans);
+  margin: 0;
+  padding: 0;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg-dark);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #4b5563;
+}
+
+/* Dark Mode Leaflet Map Trick */
+.map-tiles-dark {
+  filter: invert(100%) hue-rotate(180deg) brightness(95%) contrast(90%);
+}
+
+/* Proper Dark Mode Filter for Leaflet Tiles */
+.leaflet-tile-pane {
+  filter: invert(100%) hue-rotate(180deg) brightness(95%) contrast(90%);
+}
+
+/* Ensure tooltips/popups look good */
+.leaflet-popup-content-wrapper, .leaflet-popup-tip {
+  background: #1a1d24 !important;
+  color: #e5e7eb !important;
+  border: 1px solid #374151 !important;
+}
+
+.leaflet-popup-tip {
+  background: #1a1d24 !important;
+  border: 1px solid #374151 !important;
+  border-top: none !important;
+  border-left: none !important;
+}
+
+/* ==============================================================================
+   NYC Taxi Roof Light Button & Pulsing Aura Effects
+   ============================================================================== */
+@keyframes taxiAuraPulse {
+  0% {
+    box-shadow: 
+      0 0 0 0 rgba(255, 193, 7, 0.7),
+      0 0 16px 4px rgba(255, 193, 7, 0.6),
+      0 0 35px 8px rgba(255, 179, 0, 0.45),
+      inset 0 0 10px rgba(255, 255, 255, 0.6);
+    filter: drop-shadow(0 0 10px rgba(255, 193, 7, 0.8));
+    transform: translateY(0);
+  }
+  50% {
+    box-shadow: 
+      0 0 0 8px rgba(255, 193, 7, 0),
+      0 0 30px 10px rgba(255, 193, 7, 0.95),
+      0 0 65px 20px rgba(255, 179, 0, 0.65),
+      inset 0 0 16px rgba(255, 255, 255, 0.9);
+    filter: drop-shadow(0 0 20px rgba(255, 193, 7, 1));
+    transform: translateY(-1px);
+  }
+  100% {
+    box-shadow: 
+      0 0 0 0 rgba(255, 193, 7, 0.7),
+      0 0 16px 4px rgba(255, 193, 7, 0.6),
+      0 0 35px 8px rgba(255, 179, 0, 0.45),
+      inset 0 0 10px rgba(255, 255, 255, 0.6);
+    filter: drop-shadow(0 0 10px rgba(255, 193, 7, 0.8));
+    transform: translateY(0);
+  }
+}
+
+.taxi-light-on {
+  background-color: #FFC107 !important;
+  color: #000000 !important;
+  border-color: #FFE082 !important;
+  animation: taxiAuraPulse 1.8s infinite ease-in-out;
+}
+
+.taxi-light-off {
+  background-color: #050505 !important;
+  color: #ffffff !important;
+  border-color: #374151 !important;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.9), 0 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.taxi-light-off:hover {
+  border-color: #9ca3af !important;
+  background-color: #121212 !important;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.15);
+}

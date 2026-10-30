@@ -1,0 +1,53 @@
+# ==============================================================================
+# NYC Mobility Intelligence - Git Ignore Configuration
+# ==============================================================================
+
+# Python Environments & Artifacts
+venv/
+env/
+ENV/
+__pycache__/
+*.py[cod]
+*$py.class
+*.log
+.pytest_cache/
+
+# Node.js & Frontend Build Outputs
+node_modules/
+frontend/node_modules/
+dist/
+frontend/dist/
+dist-ssr/
+*.local
+.vite/
+
+# Distributed Big Data Warehouse & Spark Checkpoints (>100 GB raw parquet partitions)
+data/curated/
+data/checkpoints/
+data/raw/
+
+# System & OS Files
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+
+# IDE & Editor Files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Environment & Secrets
+.env
+.env.*
+!.env.example
+
+# Archives
+*.zip
+*.tar.gz
+*.rar
+*.7z

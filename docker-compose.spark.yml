@@ -1,0 +1,67 @@
+services:
+  spark-master:
+    image: apache/spark:latest
+    container_name: spark-master
+    hostname: spark-master
+    command: /opt/spark/bin/spark-class org.apache.spark.deploy.master.Master -h spark-master -p 7077 --webui-port 8080
+    ports:
+      - "8080:8080"   # Master Web UI
+      - "7077:7077"   # Spark Master RPC
+      - "4040:4040"   # Active Application UI (DAG & Executors)
+    volumes:
+      - ./data:/opt/spark/data:ro
+      - ./scripts:/opt/spark/scripts:ro
+    networks:
+      - spark-net
+
+  worker-node-1:
+    image: apache/spark:latest
+    container_name: worker-node-1
+    hostname: worker-node-1
+    command: /opt/spark/bin/spark-class org.apache.spark.deploy.worker.Worker spark://spark-master:7077 -h worker-node-1 -c 2 -m 3G --webui-port 8081
+    environment:
+      - SPARK_LOCAL_HOSTNAME=worker-node-1
+    ports:
+      - "8081:8081"   # Worker 1 Web UI
+    volumes:
+      - ./data:/opt/spark/data:ro
+    depends_on:
+      - spark-master
+    networks:
+      - spark-net
+
+  worker-node-2:
+    image: apache/spark:latest
+    container_name: worker-node-2
+    hostname: worker-node-2
+    command: /opt/spark/bin/spark-class org.apache.spark.deploy.worker.Worker spark://spark-master:7077 -h worker-node-2 -c 2 -m 3G --webui-port 8081
+    environment:
+      - SPARK_LOCAL_HOSTNAME=worker-node-2
+    ports:
+      - "8082:8081"   # Worker 2 Web UI
+    volumes:
+      - ./data:/opt/spark/data:ro
+    depends_on:
+      - spark-master
+    networks:
+      - spark-net
+
+  worker-node-3:
+    image: apache/spark:latest
+    container_name: worker-node-3
+    hostname: worker-node-3
+    command: /opt/spark/bin/spark-class org.apache.spark.deploy.worker.Worker spark://spark-master:7077 -h worker-node-3 -c 2 -m 3G --webui-port 8081
+    environment:
+      - SPARK_LOCAL_HOSTNAME=worker-node-3
+    ports:
+      - "8083:8081"   # Worker 3 Web UI
+    volumes:
+      - ./data:/opt/spark/data:ro
+    depends_on:
+      - spark-master
+    networks:
+      - spark-net
+
+networks:
+  spark-net:
+    driver: bridge

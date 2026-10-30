@@ -1,0 +1,222 @@
+[
+  {
+    "id": "TRP-9021",
+    "type": "Zero Distance High Fare",
+    "score": 98,
+    "zone": "JFK Airport",
+    "model": "Isolation Forest",
+    "details": "Distance: 0.0 mi, Fare: $150.00",
+    "expected": "Distance > 10 mi for $150 fare",
+    "action": "Flag for payment audit",
+    "time": "5 minutes ago"
+  },
+  {
+    "id": "TRP-1123",
+    "type": "Extreme Duration (Z > 4.5)",
+    "score": 94,
+    "zone": "Times Sq",
+    "model": "Z-Score Threshold (Z=4.5)",
+    "details": "Duration: 14.2 hrs, Distance: 2.1 mi",
+    "expected": "Duration < 45 mins for 2 mi",
+    "action": "Flag as GPS system error",
+    "time": "14 minutes ago"
+  },
+  {
+    "id": "TRP-4451",
+    "type": "Negative Fare Amount",
+    "score": 99,
+    "zone": "Midtown Center",
+    "model": "Rule-based Data Quality",
+    "details": "Fare: -$45.00",
+    "expected": "Fare >= $3.00 initial charge",
+    "action": "Drop from financial reporting",
+    "time": "28 minutes ago"
+  },
+  {
+    "id": "TRP-8832",
+    "type": "Speed Violation (> 85 mph)",
+    "score": 95,
+    "zone": "LaGuardia Airport",
+    "model": "Physical Constraints Engine",
+    "details": "Avg Speed: 120.4 mph, Distance: 8.2 mi in 4.1 mins",
+    "expected": "Speed < 65 mph on Grand Central Pkwy",
+    "action": "Flag driver for safety review",
+    "time": "39 minutes ago"
+  },
+  {
+    "id": "TRP-5192",
+    "type": "Extreme Outlier Fare (Z > 4)",
+    "score": 96,
+    "zone": "Financial District",
+    "model": "Z-Score Threshold (Z=5.2)",
+    "details": "Fare: $348.50, Distance: 3.2 mi",
+    "expected": "Fare < $35.00 for short Downtown trip",
+    "action": "Audit meter calibration and tolls",
+    "time": "48 minutes ago"
+  },
+  {
+    "id": "TRP-6321",
+    "type": "Impossible Teleportation (GPS Jump)",
+    "score": 97,
+    "zone": "Downtown Brooklyn",
+    "model": "Geospatial Discontinuity Engine",
+    "details": "Jumped 18.5 mi in 28 seconds (2,378 mph)",
+    "expected": "Max physical velocity < 80 mph",
+    "action": "Quarantine corrupt GPS trajectory",
+    "time": "1 hour ago"
+  },
+  {
+    "id": "TRP-7714",
+    "type": "Phantom Surge Multiplier",
+    "score": 91,
+    "zone": "Williamsburg",
+    "model": "DBSCAN Spatial Density Cluster",
+    "details": "Congestion Surcharge: $48.00 at 03:30 AM",
+    "expected": "Congestion fee capped at $2.75",
+    "action": "Reverse unauthorized rate surge",
+    "time": "1 hour ago"
+  },
+  {
+    "id": "TRP-3209",
+    "type": "Reverse Meter Running",
+    "score": 93,
+    "zone": "Harlem",
+    "model": "Spark Monotonic Integrity Validator",
+    "details": "Fare decreased from $32.00 to $12.00 mid-trip",
+    "expected": "Cumulative meter fare strictly monotonic",
+    "action": "Inspect taximeter hardware tampering",
+    "time": "2 hours ago"
+  },
+  {
+    "id": "TRP-4882",
+    "type": "Cross-Borough Teleportation",
+    "score": 96,
+    "zone": "Staten Island Mall",
+    "model": "Spatial Speed Engine",
+    "details": "Staten Island to Bronx in 4 mins (Distance: 27.5 mi)",
+    "expected": "Route travel time >= 45 mins",
+    "action": "Flag sensor spoofing event",
+    "time": "2 hours ago"
+  },
+  {
+    "id": "TRP-2195",
+    "type": "Stalled Gridlock Outlier",
+    "score": 88,
+    "zone": "Penn Station",
+    "model": "Congestion Anomaly Classifier",
+    "details": "Duration: 6.2 hrs, Distance: 0.4 mi, Idle: 94%",
+    "expected": "Trip duration < 30 mins for 0.4 mi",
+    "action": "Investigate vehicle breakdown",
+    "time": "3 hours ago"
+  },
+  {
+    "id": "TRP-8103",
+    "type": "Excessive Distance Local Hop",
+    "score": 92,
+    "zone": "Upper East Side",
+    "model": "Geofence Circuitry Model",
+    "details": "Pickup & Dropoff 2 blocks apart, Recorded: 42.1 mi",
+    "expected": "Distance < 1.0 mi between adjacent avenues",
+    "action": "Audit driver route padding",
+    "time": "3 hours ago"
+  },
+  {
+    "id": "TRP-1049",
+    "type": "Duplicate Transaction Hash",
+    "score": 99,
+    "zone": "Grand Central",
+    "model": "Idempotency Filter",
+    "details": "Exact identical fare $24.80 billed 3x in 10ms",
+    "expected": "Single transaction per trip token",
+    "action": "Trigger automated payment refund",
+    "time": "4 hours ago"
+  },
+  {
+    "id": "TRP-6628",
+    "type": "Toll Avoidance Route Deviation",
+    "score": 86,
+    "zone": "Long Island City",
+    "model": "Route Geometry Auditor",
+    "details": "Detour factor: 4.8x normal path length",
+    "expected": "Detour ratio < 1.6x optimal path",
+    "action": "Log route efficiency score",
+    "time": "4 hours ago"
+  },
+  {
+    "id": "TRP-9452",
+    "type": "Passenger Capacity Violation",
+    "score": 90,
+    "zone": "East Village",
+    "model": "Vehicle Regulatory Rules",
+    "details": "Passenger count recorded: 12 in 4-passenger sedan",
+    "expected": "Max passengers <= 5 for standard medallion",
+    "action": "Flag dispatch record for correction",
+    "time": "5 hours ago"
+  },
+  {
+    "id": "TRP-3810",
+    "type": "Midnight Surge Spike",
+    "score": 89,
+    "zone": "Coney Island",
+    "model": "Temporal Outlier Model",
+    "details": "Base fare spiked 500% with no adverse weather",
+    "expected": "Standard rate sheet without citywide emergency",
+    "action": "Review pricing override logs",
+    "time": "6 hours ago"
+  },
+  {
+    "id": "TRP-5521",
+    "type": "Airport Perimeter Disconnect",
+    "score": 94,
+    "zone": "Newark Airport (EWR)",
+    "model": "Airport Geofence Monitor",
+    "details": "Interstate flat rate missing required port toll",
+    "expected": "NJ interstate fee + tunnel toll included",
+    "action": "Reconcile port authority toll log",
+    "time": "7 hours ago"
+  },
+  {
+    "id": "TRP-7390",
+    "type": "Expressway Speed Anomaly",
+    "score": 95,
+    "zone": "Yankee Stadium / South Bronx",
+    "model": "Physical Constraints Engine",
+    "details": "Major Deegan Expressway speed: 104 mph",
+    "expected": "Speed limit <= 50 mph",
+    "action": "Submit safety report",
+    "time": "8 hours ago"
+  },
+  {
+    "id": "TRP-4019",
+    "type": "Sub-Zero Fare With Surcharge",
+    "score": 99,
+    "zone": "Astoria",
+    "model": "Rule-based Data Quality",
+    "details": "Fare: -$12.50 with positive tip $5.00",
+    "expected": "Total amount must be strictly positive",
+    "action": "Drop from financial reporting",
+    "time": "9 hours ago"
+  },
+  {
+    "id": "TRP-8472",
+    "type": "Verrazzano Bridge Toll Discrepancy",
+    "score": 92,
+    "zone": "St. George Ferry",
+    "model": "Toll Matrix Engine",
+    "details": "Crossed Verrazzano Bridge without toll record",
+    "expected": "E-ZPass toll record of $6.94",
+    "action": "Verify transponder telemetry",
+    "time": "10 hours ago"
+  },
+  {
+    "id": "TRP-6184",
+    "type": "Outlier Route Loop",
+    "score": 87,
+    "zone": "Fordham",
+    "model": "Isolation Forest",
+    "details": "Circled the same 4-block perimeter 14 times",
+    "expected": "Linear or goal-directed path trajectory",
+    "action": "Review driver trip log",
+    "time": "11 hours ago"
+  }
+]
